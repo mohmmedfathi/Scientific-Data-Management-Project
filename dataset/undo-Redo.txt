@@ -1,0 +1,255 @@
+[
+  {
+    "op": "core/column-split",
+    "description": "Split column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 2
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 1 to ProbeName",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 1",
+    "newColumnName": "ProbeName"
+  },
+  {
+    "op": "core/column-split",
+    "description": "Split column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 by separator",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ";",
+    "regex": false,
+    "maxColumns": 25
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 1 to A1_NS",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 1",
+    "newColumnName": "A1_NS"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 2 to A2_NS",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 2",
+    "newColumnName": "A2_NS"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 3 to A3_NS",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 3",
+    "newColumnName": "A3_NS"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 4 to B1_NS",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 4",
+    "newColumnName": "B1_NS"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 5 to B2_NS",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 5",
+    "newColumnName": "B2_NS"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 6 to B3_NS",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 6",
+    "newColumnName": "B3_NS"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 14 to ProbeSeq",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 14",
+    "newColumnName": "ProbeSeq"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 16 to Chromosome",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 16",
+    "newColumnName": "Chromosome"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 17 to Gene_ID",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 17",
+    "newColumnName": "Gene_ID"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 23 to Description",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 23",
+    "newColumnName": "Description"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 24 to GO",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 24",
+    "newColumnName": "GO"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column Gene_ID to asasas",
+    "oldColumnName": "Gene_ID",
+    "newColumnName": "asasas"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 21 to Gene_ID",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 21",
+    "newColumnName": "Gene_ID"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 7",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 7"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 8",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 8"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 9",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 9"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 10",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 10"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 11",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 11"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 12",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 12"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 13 to GeneSymbol",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 13",
+    "newColumnName": "GeneSymbol"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 15",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 15"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column asasas",
+    "columnName": "asasas"
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "---",
+          "name": "GO",
+          "type": "text",
+          "columnName": "GO"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 18",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 18"
+  },
+  {
+    "op": "core/column-removal",
+    "description": "Remove column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 19",
+    "columnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 19"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 22 to Accession",
+    "oldColumnName": "ProbeName;A1_NS;A2_NS;A3_NS;B1_NS;B2_NS;B3_NS;A1_flags;A2_flags;A3_flags;B1_flags;B2_flags;B3_flags;GeneSymbol;ProbeSeq;Start;Chromosome;End;Strand;ControlType;Ensembl;Gene_ID;Accession;Description;GO;\"TIGRID 2 22",
+    "newColumnName": "Accession"
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "---",
+          "name": "Accession",
+          "type": "text",
+          "columnName": "Accession"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": "---",
+          "name": "Chromosome",
+          "type": "text",
+          "columnName": "Chromosome"
+        }
+      ]
+    }
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column ProbeName using expression value.trim()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ProbeName",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column ProbeName using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ProbeName",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]

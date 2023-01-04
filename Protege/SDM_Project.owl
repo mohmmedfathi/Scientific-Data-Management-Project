@@ -1,0 +1,671 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/yousf/ontologies/2021/11/SDM_Project"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/yousf/ontologies/2021/11/SDM_Project">
+    <Prefix name="" IRI="http://www.semanticweb.org/yousf/ontologies/2021/11/SDM_Project"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AdenoCarcinoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biological_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bone_Cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cellular_Componeent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Downregulated_Genes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Large_Cell_Carcinoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lung_Cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesothelioma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Molecular_Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_Small_Lung_Cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Primary_Lung_Cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Small_Lung_Cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Squamous_Cell_Carcinoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Upregulated_Genes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_biological_process"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_expression"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_function"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_a"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#located_in"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#GO_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Gene_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Gene_Name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COLA6A1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RALY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RNA_binding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catalytic_step_2_spliceosome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cell_adhesion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cellular_response_to_amino_acid_stimulus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cholesterol_homeostasis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#collagen_binding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#endodermal_cell_differentiation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#endoplasmic_reticulum_lumen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#extracellular_matrix_structural_constituent_conferring_tensile_strength"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#osteoblast_differentiation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#platelet-derived_growth_factor_binding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#regulation_of_nucleic_acid-templated_transcription"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transcription_coregulator_activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mRNA_splicing,_via_spliceosome"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AdenoCarcinoma"/>
+        <Class IRI="#Non_Small_Lung_Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bone_Cancer"/>
+        <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cancer"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Downregulated_Genes"/>
+        <Class IRI="#Genes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Large_Cell_Carcinoma"/>
+        <Class IRI="#Non_Small_Lung_Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lung_Cancer"/>
+        <Class IRI="#Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mesothelioma"/>
+        <Class IRI="#Lung_Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_Small_Lung_Cancer"/>
+        <Class IRI="#Primary_Lung_Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Primary_Lung_Cancer"/>
+        <Class IRI="#Lung_Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Small_Lung_Cancer"/>
+        <Class IRI="#Primary_Lung_Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Squamous_Cell_Carcinoma"/>
+        <Class IRI="#Non_Small_Lung_Cancer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Upregulated_Genes"/>
+        <Class IRI="#Genes"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AdenoCarcinoma"/>
+        <Class IRI="#Large_Cell_Carcinoma"/>
+        <Class IRI="#Squamous_Cell_Carcinoma"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Biological_Process"/>
+        <Class IRI="#Cellular_Componeent"/>
+        <Class IRI="#Disease"/>
+        <Class IRI="#Genes"/>
+        <Class IRI="#Molecular_Function"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Downregulated_Genes"/>
+        <Class IRI="#Upregulated_Genes"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Non_Small_Lung_Cancer"/>
+        <Class IRI="#Small_Lung_Cancer"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Genes"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Upregulated_Genes"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Downregulated_Genes"/>
+        <NamedIndividual IRI="#RALY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genes"/>
+        <NamedIndividual IRI="#RALY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molecular_Function"/>
+        <NamedIndividual IRI="#RNA_binding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cellular_Componeent"/>
+        <NamedIndividual IRI="#catalytic_step_2_spliceosome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biological_Process"/>
+        <NamedIndividual IRI="#cell_adhesion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biological_Process"/>
+        <NamedIndividual IRI="#cellular_response_to_amino_acid_stimulus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biological_Process"/>
+        <NamedIndividual IRI="#cholesterol_homeostasis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molecular_Function"/>
+        <NamedIndividual IRI="#collagen_binding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biological_Process"/>
+        <NamedIndividual IRI="#endodermal_cell_differentiation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cellular_Componeent"/>
+        <NamedIndividual IRI="#endoplasmic_reticulum_lumen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molecular_Function"/>
+        <NamedIndividual IRI="#extracellular_matrix_structural_constituent_conferring_tensile_strength"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biological_Process"/>
+        <NamedIndividual IRI="#osteoblast_differentiation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molecular_Function"/>
+        <NamedIndividual IRI="#platelet-derived_growth_factor_binding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biological_Process"/>
+        <NamedIndividual IRI="#regulation_of_nucleic_acid-templated_transcription"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molecular_Function"/>
+        <NamedIndividual IRI="#transcription_coregulator_activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biological_Process"/>
+        <NamedIndividual IRI="#mRNA_splicing,_via_spliceosome"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_biological_process"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+        <NamedIndividual IRI="#cell_adhesion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_biological_process"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+        <NamedIndividual IRI="#osteoblast_differentiation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_function"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+        <NamedIndividual IRI="#collagen_binding"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_function"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+        <NamedIndividual IRI="#extracellular_matrix_structural_constituent_conferring_tensile_strength"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+        <NamedIndividual IRI="#endoplasmic_reticulum_lumen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_biological_process"/>
+        <NamedIndividual IRI="#RALY"/>
+        <NamedIndividual IRI="#cholesterol_homeostasis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_biological_process"/>
+        <NamedIndividual IRI="#RALY"/>
+        <NamedIndividual IRI="#regulation_of_nucleic_acid-templated_transcription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_biological_process"/>
+        <NamedIndividual IRI="#RALY"/>
+        <NamedIndividual IRI="#mRNA_splicing,_via_spliceosome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_function"/>
+        <NamedIndividual IRI="#RALY"/>
+        <NamedIndividual IRI="#RNA_binding"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_function"/>
+        <NamedIndividual IRI="#RALY"/>
+        <NamedIndividual IRI="#transcription_coregulator_activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#located_in"/>
+        <NamedIndividual IRI="#RALY"/>
+        <NamedIndividual IRI="#catalytic_step_2_spliceosome"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+        <Literal>The collagens are a superfamily of proteins that play a role in maintaining the integrity of various tissues. Collagens are extracellular matrix proteins and have a triple-helical domain as their common structural element. Collagen VI is a major structural component of microfibrils. The basic structural unit of collagen VI is a heterotrimer of the alpha1(VI), alpha2(VI), and alpha3(VI) chains. The alpha2(VI) and alpha3(VI) chains are encoded by the COL6A2 and COL6A3 genes, respectively. The protein encoded by this gene is the alpha 1 subunit of type VI collagen (alpha1(VI) chain). Mutations in the genes that code for the collagen VI subunits result in the autosomal dominant disorder, Bethlem myopathy.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gene_ID"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1291</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gene_Name"/>
+        <NamedIndividual IRI="#COLA6A1"/>
+        <Literal>collagen type VI alpha 1 chain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#RALY"/>
+        <Literal>This gene encodes a member of the heterogeneous nuclear ribonucleoprotein (hnRNP) gene family. This protein may play a role in pre-mRNA splicing and in embryonic development. Alternate splicing results in multiple transcript variants</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gene_ID"/>
+        <NamedIndividual IRI="#RALY"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">22913</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Gene_Name"/>
+        <NamedIndividual IRI="#RALY"/>
+        <Literal>RALY heterogeneous nuclear ribonucleoprotein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#RNA_binding"/>
+        <Literal>Binding to an RNA molecule or a portion thereof.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#RNA_binding"/>
+        <Literal>GO:0003723</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#catalytic_step_2_spliceosome"/>
+        <Literal>A spliceosomal complex that contains three snRNPs, including U5, bound to a splicing intermediate in which the first catalytic cleavage of the 5&apos; splice site has occurred. The precise subunit composition differs significantly from that of the catalytic step 1, or activated, spliceosome, and includes many proteins in addition to those found in the associated snRNPs.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#catalytic_step_2_spliceosome"/>
+        <Literal>GO:0071013</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#cell_adhesion"/>
+        <Literal>The attachment of a cell, either to another cell or to an underlying substrate such as the extracellular matrix, via cell adhesion molecules.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#cell_adhesion"/>
+        <Literal>GO:0007155</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#cellular_response_to_amino_acid_stimulus"/>
+        <Literal>Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an amino acid stimulus. An amino acid is a carboxylic acids containing one or more amino groups</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#cellular_response_to_amino_acid_stimulus"/>
+        <Literal>GO:0071230</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#cholesterol_homeostasis"/>
+        <Literal>Any process involved in the maintenance of an internal steady state of cholesterol within an organism or cell.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#cholesterol_homeostasis"/>
+        <Literal>GO:0042632</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#collagen_binding"/>
+        <Literal>Binding to collagen, a group of fibrous proteins of very high tensile strength that form the main component of connective tissue in animals. Collagen is highly enriched in glycine (some regions are 33% glycine) and proline, occurring predominantly as 3-hydroxyproline (about 20%)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#collagen_binding"/>
+        <Literal>GO:0005518</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#endodermal_cell_differentiation"/>
+        <Literal>The process in which a relatively unspecialized cell acquires the specialized features of an endoderm cell, a cell of the inner of the three germ layers of the embryo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#endodermal_cell_differentiation"/>
+        <Literal>GO:0035987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#endoplasmic_reticulum_lumen"/>
+        <Literal>The volume enclosed by the membranes of the endoplasmic reticulum.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#endoplasmic_reticulum_lumen"/>
+        <Literal>GO:0005788</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#extracellular_matrix_structural_constituent_conferring_tensile_strength"/>
+        <Literal>A constituent of the extracellular matrix that enables the matrix to resist longitudinal stress.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#extracellular_matrix_structural_constituent_conferring_tensile_strength"/>
+        <Literal>GO:0030020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#osteoblast_differentiation"/>
+        <Literal>The process whereby a relatively unspecialized cell acquires the specialized features of an osteoblast, a mesodermal or neural crest cell that gives rise to bone.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#osteoblast_differentiation"/>
+        <Literal>GO:0001649</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#platelet-derived_growth_factor_binding"/>
+        <Literal>Binding to platelet-derived growth factor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#platelet-derived_growth_factor_binding"/>
+        <Literal>GO:0048407</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#regulation_of_nucleic_acid-templated_transcription"/>
+        <Literal>Any process that modulates the frequency, rate or extent of nucleic acid-templated transcription</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#regulation_of_nucleic_acid-templated_transcription"/>
+        <Literal>GO:1903506</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#transcription_coregulator_activity"/>
+        <Literal>A transcription regulator activity that modulates the transcription of specific gene sets via binding to a DNA-bound DNA-binding transcription factor, either on its own or as part of a complex. Coregulators often act by altering chromatin structure and modifications. For example, one class of transcription coregulators modifies chromatin structure through covalent modification of histones. A second class remodels the conformation of chromatin in an ATP-dependent fashion. A third class modulates interactions of DNA-bound DNA-binding transcription factors with other transcription coregulators.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#transcription_coregulator_activity"/>
+        <Literal>GO:0003712</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Description"/>
+        <NamedIndividual IRI="#mRNA_splicing,_via_spliceosome"/>
+        <Literal>The joining together of exons from one or more primary transcripts of messenger RNA (mRNA) and the excision of intron sequences, via a spliceosomal mechanism, so that mRNA consisting only of the joined exons is produced.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#GO_ID"/>
+        <NamedIndividual IRI="#mRNA_splicing,_via_spliceosome"/>
+        <Literal>GO:0000398</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_biological_process"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_expression"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_a"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_biological_process"/>
+        <Class IRI="#Genes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_expression"/>
+        <Class IRI="#Genes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_function"/>
+        <Class IRI="#Genes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#AdenoCarcinoma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Cancer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Large_Cell_Carcinoma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Lung_Cancer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Mesothelioma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Non_Small_Lung_Cancer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Primary_Lung_Cancer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Small_Lung_Cancer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Squamous_Cell_Carcinoma"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#located_in"/>
+        <Class IRI="#Genes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_biological_process"/>
+        <Class IRI="#Biological_Process"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_expression"/>
+        <Class IRI="#Downregulated_Genes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_expression"/>
+        <Class IRI="#Upregulated_Genes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_function"/>
+        <Class IRI="#Molecular_Function"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Cancer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Lung_Cancer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Non_Small_Lung_Cancer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_a"/>
+        <Class IRI="#Primary_Lung_Cancer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#located_in"/>
+        <Class IRI="#Cellular_Componeent"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Description"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Gene_ID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Biological_Process"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Cellular_Componeent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Genes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Description"/>
+        <Class IRI="#Molecular_Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#GO_ID"/>
+        <Class IRI="#Biological_Process"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#GO_ID"/>
+        <Class IRI="#Cellular_Componeent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#GO_ID"/>
+        <Class IRI="#Molecular_Function"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Gene_ID"/>
+        <Class IRI="#Genes"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#GO_ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Gene_ID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Gene_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

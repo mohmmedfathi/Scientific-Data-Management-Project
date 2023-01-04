@@ -1,0 +1,54 @@
+# Get and print current working directory.
+print(getwd())
+
+# Set current working directory.
+setwd("D:/FCI Study/Year 4/Semester 1/Scientific Data Management/Project")
+mydata<-read.csv("GSE175601_BH190142_Normalized_Data-csv (after editing).csv", header=TRUE)
+
+control_experimental<-mydata[,c(2:7)]
+
+
+############################################################
+###t-Test
+labels<- c(rep("control", 3),rep("experimental", 3))
+
+my.ttest <- function(v, labels) {
+  
+  levels <- unique(labels)
+  control <- v[labels == levels[1]]
+  experimental <- v[labels == levels[2]]
+  pval <- t.test(control, experimental, var.equal = T,paired = F)$p.value
+  pval
+  
+}
+allpvalues <- apply(control_experimental, 1, my.ttest, labels)
+
+Data_With_PValue<-data.frame(allpvalues,control_experimental)
+sig.inds <- which(allpvalues < 0.05)
+
+
+###############################################################
+###Visualization
+if (!requireNamespace("BiocManager", quietly = TRUE)) 
+  install.packages("BiocManager")
+BiocManager::install(version = "3.12")
+######################################
+BiocManager::install('ALL')
+library('ALL')
+BiocManager::install("pheatmap")
+library(pheatmap)
+#######################################
+data.sig <- as.matrix(Data_With_PValue[sig.inds,-1])
+rownames(data.sig) <- mydata[sig.inds,8]
+
+data.sig<-data.sig[1:50,]
+
+pheatmap(data.sig,scale="row", main = "Heatmap of the expression profile of the DEGs between NSCLC without Bone Metastasis",xlab = "Samples",ylab = "Genes")
+
+
+heatmap(data.sig,scale="row",main = "Heatmap of the expression profile of the DEGs between NSCLC without Bone Metastasis",xlab = "Samples",ylab = "Genes")
+
+boxplot(data.sig,xlab = "Samples", ylab = "Gene_Expression_levels",main= "Summary Of Samples gene expression levels")
+
+################################################################
+
